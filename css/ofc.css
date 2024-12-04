@@ -1,0 +1,336 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #e2e0e0;
+    background: #1d1d1d;
+    font-family: 'Poppins',sans-serif;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+}
+
+.container{
+    width: 100%;
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Ensure header is above the animated background */
+.header-section {
+    position: relative;
+    z-index: 10; /* Ensures it is above the animated background */
+    text-align: center;
+    padding: 20px;
+    background-color:transparent; /* Semi-transparent background */
+  
+}
+
+.header-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f0eeee;
+}
+
+.header-section p {
+    font-size: 1rem;
+    color: #f1e6e6;
+}
+
+/* Ensure animated background does not overlap */
+
+
+
+
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.colorBox{
+    z-index: 1;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+
+.colorBox:hover{
+    background: #017c22;
+    transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #017c22;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
+
+
+
+
+.table {
+    margin-top: 7rem; 
+    width: 80%; /* Keep the table width as defined */
+    border-collapse: collapse;
+    pointer-events: auto; /* Allow interactions with the table */
+    z-index: 3;
+    position: relative;
+    margin-left: 9.5rem;
+    cursor: pointer;
+}
+
+
+.table:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(96, 95, 95, 0.3);
+   
+  }
+
+.tablep {
+    background-color: #3e3d3d;
+    width: 100%; /* Keep the table width as defined */
+    border-collapse: collapse;
+    pointer-events: auto; /* Allow interactions with the table */
+    z-index: 3;
+    position: relative;
+    
+}
+
+.tablep th{
+	background-color: #6e8f77;
+	color:#1d1d1d;
+}
+
+
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+
+
+
+
+.table th{
+	background-color: #017c22;
+	color:#1d1d1d;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #1d1d1d;
+    cursor: pointer;
+}
+
+.table tbody tr:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(55, 55, 55, 0.3);
+   
+  }
+
+/* Dropdown animation styles */
+
+
+.details {
+  display: none;
+  transition: max-height 0.4s ease;
+  background: transparent;
+}
+
+
+
+.details.show {
+  display: table-row;
+}
+
+.project-details {
+    text-align: left;
+    padding: 20px;
+    background-color: #1d1d1d; /* Background color for the details section */
+    border-radius: 10px;
+    color: #fff;
+}
+
+.project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #dadddd;
+}
+
+.project-details p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-images .project-image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 5px;
+    z-index: 4;
+ 
+}
+
+
+
+
+/*project*/
+
+/*responsive*/
+/* Base styles are already defined. 
+   Below are additional responsive styles to adapt to different devices. */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .table {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .tablep {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .thead{
+
+        display: none;
+
+
+    }
+
+    .table tr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .table td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .project-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-details p {
+        font-size: 0.9rem;
+    }
+
+    .project-images .project-image {
+        max-width: 40%;
+        margin: 5px 0;
+    }
+
+    .prev, .next, .close {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+    }
+    .details {
+        display: none; /* Ensures it starts hidden by default */
+        max-height: 0;
+        overflow: hidden; /* Prevents content from spilling out */
+        transition: max-height 0.4s ease; /* Smooth animation */
+      }
+      
+      .details.show {
+        display: table-row; /* Make it visible */
+        max-height: 500px; /* Adjust to fit the content */
+      }
+}
+
+/* Medium devices (up to 768px) */
+@media (max-width: 768px) {
+    .table {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .tablep {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .project-details h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-details p {
+        font-size: 1rem;
+    }
+
+    .project-images .project-image {
+        max-width: 30%;
+    }
+
+    .prev, .next, .close {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .modal-content {
+        max-width: 85%;
+    }
+    .details {
+        display: none; /* Ensures it starts hidden by default */
+        max-height: 0;
+        overflow: hidden; /* Prevents content from spilling out */
+        transition: max-height 0.4s ease; /* Smooth animation */
+      }
+      
+      .details.show {
+        display: table-row; /* Make it visible */
+        max-height: 500px; /* Adjust to fit the content */
+      }
+}

@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishekh Singha</title>
+    <link rel="stylesheet" href="css/ofc.css">
+</head>
+<body>
+
+
+
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+            
+        </div>
+    </div>
+
+    <div class="container">
+      <header class="header-section">
+        <h1>Welcome to my professional portfolio</h1>
+        <p>
+            Explore various projects, their intricate details, and the creative efforts behind each one.
+        </p>
+    </header>
+
+       
+        <section>
+            <div class="textBox">
+              
+  <table class="table">
+    <thead class="thead">
+      <tr>
+        <th>S.No</th>
+        <th>Cetagory</th>
+        <th>Nomper of projects</th>
+        <th>Worked as</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="toggleDetails(this)">
+        <td data-label="S.No-">1</td>
+        <td data-label="Cetagory-">Structure Design</td>
+        <td data-label="Nomper of projects-">34</td>
+        <td data-label="Marks%-">50%</td>
+        <td data-label="Status-">Passed</td>
+      </tr>
+      <tr class="details">
+        <td colspan="5">  
+            
+            <table class="tablep">
+                <thead class="thead">
+                  <tr>
+                    <th>P.No</th>
+                    <th>Project Name</th>
+                    <th>Location</th>
+                    <th>Worked as</th>
+                    <th>Tools</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="Project No.-">1</td>
+                    <td data-label="Project Name-">Begum bari</td>
+                    <td data-label="Location-">Narshingdi</td>
+                    <td data-label="Worked as-">Structure engineer</td>
+                    <td data-label="Tools-">Etabs,Autocad</td>
+                  </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                        <div class="project-details">
+                            <h3>Project Details</h3>
+                            <p>
+                                This project focuses on developing innovative solutions for sustainable energy.
+                                The team worked extensively on designing and implementing efficient power systems
+                                tailored for rural areas.
+                                This project focuses on developing innovative solutions for sustainable energy.
+                                The team worked extensively on designing and implementing efficient power systems
+                                tailored for rural areas.
+                            </p>
+                           
+                        </div>
+                   
+                      
+                      <div class="project-images">
+                          <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                          <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                          <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                      </div>
+
+                      <div class="project-details">
+                        <h3>Structural Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                  
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+
+                  <div class="project-details">
+                    <h3>Acritectural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+               
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+                      
+                      
+                        
+                    
+                    
+                    </td>
+            
+                    <tr onclick="toggleDetails(this)">
+                      <td data-label="Project No.-">2</td>
+                      <td data-label="Project Name-">Begum bari</td>
+                      <td data-label="Location-">Narshingdi</td>
+                      <td data-label="Worked as-">Structure engineer</td>
+                      <td data-label="Tools-">Etabs,Autocad</td>
+                    </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                   
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+                  </tr>
+            
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="Project No.-">3</td>
+                    <td data-label="Project Name-">Begum bari</td>
+                    <td data-label="Location-">Narshingdi</td>
+                    <td data-label="Worked as-">Structure engineer</td>
+                    <td data-label="Tools-">Etabs,Autocad</td>
+                  </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                      <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+                  </tr>
+            
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="Project No.-">4</td>
+                    <td data-label="Project Name-">Begum bari</td>
+                    <td data-label="Location-">Narshingdi</td>
+                    <td data-label="Worked as-">Structure engineer</td>
+                    <td data-label="Tools-">Etabs,Autocad</td>
+                  </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                      <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        
+        
+        </td>
+
+
+        <tr onclick="toggleDetails(this)">
+          <td data-label="S.No">2</td>
+          <td data-label="Cetagory">Project Management</td>
+          <td data-label="Nomper of projects">34</td>
+          <td data-label="Marks%">50%</td>
+          <td data-label="Status">Passed</td>
+        </tr>
+        <tr class="details">
+          <td colspan="5">  
+              
+            <table class="tablep">
+              <thead class="thead">
+                  <tr>
+                    <th>S.No-</th>
+                    <th>Project Name-</th>
+                    <th>Location-</th>
+                    <th>Worked as-</th>
+                    <th>Tools-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="S.No">1</td>
+                    <td data-label="Project Name">Begum bari</td>
+                    <td data-label="Location">Narshingdi</td>
+                    <td data-label="Worked as">Structure engineer</td>
+                    <td data-label="Tools">Etabs,Autocad</td>
+                  </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                        <div class="project-details">
+                            <h3>Project Details</h3>
+                            <p>
+                                This project focuses on developing innovative solutions for sustainable energy.
+                                The team worked extensively on designing and implementing efficient power systems
+                                tailored for rural areas.
+                                This project focuses on developing innovative solutions for sustainable energy.
+                                The team worked extensively on designing and implementing efficient power systems
+                                tailored for rural areas.
+                            </p>
+                           
+                        </div>
+                        <div id="imageModal" class="modal">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <button class="prev" onclick="prevImage()">&#10094;</button>
+                          <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                          <button class="next" onclick="nextImage()">&#10095;</button>
+                      </div>
+                      
+                      <div class="project-images">
+                          <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                          <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                          <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                      </div>
+  
+                      <div class="project-details">
+                        <h3>Structural Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                    <div id="imageModal" class="modal">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <button class="prev" onclick="prevImage()">&#10094;</button>
+                      <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                      <button class="next" onclick="nextImage()">&#10095;</button>
+                  </div>
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+  
+                  <div class="project-details">
+                    <h3>Acritectural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+                <div id="imageModal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+              </div>
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+                      
+                      
+                        
+                    
+                    
+                    </td>
+            
+                    <tr onclick="toggleDetails(this)">
+                      <td data-label="S.No">2</td>
+                      <td data-label="Project Name">Begum bari</td>
+                      <td data-label="Location">Narshingdi</td>
+                      <td data-label="Worked as">Structure engineer</td>
+                      <td data-label="Tools">Etabs,Autocad</td>
+                    </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                      <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+  
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+  
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+                  </tr>
+            
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="S.No">2</td>
+                    <td data-label="Project Name">Begum bari</td>
+                    <td data-label="Location">Narshingdi</td>
+                    <td data-label="Worked as">Structure engineer</td>
+                    <td data-label="Tools">Etabs,Autocad</td>
+                  </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                      <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+  
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+  
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+                  </tr>
+            
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="S.No">3</td>
+                    <td data-label="Project Name">Begum bari</td>
+                    <td data-label="Location">Narshingdi</td>
+                    <td data-label="Worked as">Structure engineer</td>
+                    <td data-label="Tools">Etabs,Autocad</td>
+                  </tr>
+                  <tr class="details">
+                    <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                      <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+  
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+  
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        
+        
+        </td>
+        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <tr onclick="toggleDetails(this)">
+        <td data-label="S.No">3</td>
+        <td data-label="Cetagory">Quantity surveying</td>
+        <td data-label="Nomper of projects">34</td>
+        <td data-label="Marks%">50%</td>
+        <td data-label="Status">Passed</td>
+      </tr>
+      <tr class="details">
+        <td colspan="5">  
+            
+          <table class="tablep">
+            <thead class="thead">
+                <tr>
+                  <th>S.No</th>
+                  <th>Project Name</th>
+                  <th>Location</th>
+                  <th>Worked as</th>
+                  <th>Tools</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr onclick="toggleDetails(this)">
+                  <td data-label="S.No">1</td>
+                  <td data-label="Project Name">Begum bari</td>
+                  <td data-label="Location">Narshingdi</td>
+                  <td data-label="Worked as">Structure engineer</td>
+                  <td data-label="Tools">Etabs,Autocad</td>
+                </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                      <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+          
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="S.No">2</td>
+                    <td data-label="Project Name">Begum bari</td>
+                    <td data-label="Location">Narshingdi</td>
+                    <td data-label="Worked as">Structure engineer</td>
+                    <td data-label="Tools">Etabs,Autocad</td>
+                  </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                    <div id="imageModal" class="modal">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <button class="prev" onclick="prevImage()">&#10094;</button>
+                      <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                      <button class="next" onclick="nextImage()">&#10095;</button>
+                  </div>
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+
+                  <div class="project-details">
+                    <h3>Structural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+                <div id="imageModal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+              </div>
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+
+              <div class="project-details">
+                <h3>Acritectural Details</h3>
+                <p>
+                    This project focuses on developing innovative solutions for sustainable energy.
+                    The team worked extensively on designing and implementing efficient power systems
+                    tailored for rural areas.
+                </p>
+               
+            </div>
+            <div id="imageModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <img id="fullImage" class="modal-content" src="" alt="Project Image">
+              <button class="next" onclick="nextImage()">&#10095;</button>
+          </div>
+          
+          <div class="project-images">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+              <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+          </div>
+                  
+                  
+                    
+                
+                
+                </td>
+                </tr>
+          
+                <tr onclick="toggleDetails(this)">
+                  <td data-label="S.No">2</td>
+                  <td data-label="Project Name">Begum bari</td>
+                  <td data-label="Location">Narshingdi</td>
+                  <td data-label="Worked as">Structure engineer</td>
+                  <td data-label="Tools">Etabs,Autocad</td>
+                </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                    <div id="imageModal" class="modal">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <button class="prev" onclick="prevImage()">&#10094;</button>
+                      <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                      <button class="next" onclick="nextImage()">&#10095;</button>
+                  </div>
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+
+                  <div class="project-details">
+                    <h3>Structural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+                <div id="imageModal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+              </div>
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+
+              <div class="project-details">
+                <h3>Acritectural Details</h3>
+                <p>
+                    This project focuses on developing innovative solutions for sustainable energy.
+                    The team worked extensively on designing and implementing efficient power systems
+                    tailored for rural areas.
+                </p>
+               
+            </div>
+            <div id="imageModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <img id="fullImage" class="modal-content" src="" alt="Project Image">
+              <button class="next" onclick="nextImage()">&#10095;</button>
+          </div>
+          
+          <div class="project-images">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+              <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+          </div>
+                  
+                  
+                    
+                
+                
+                </td>
+                </tr>
+          
+                <tr onclick="toggleDetails(this)">
+                  <td data-label="S.No">3</td>
+                  <td data-label="Project Name">Begum bari</td>
+                  <td data-label="Location">Narshingdi</td>
+                  <td data-label="Worked as">Structure engineer</td>
+                  <td data-label="Tools">Etabs,Autocad</td>
+                </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                    <div id="imageModal" class="modal">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <button class="prev" onclick="prevImage()">&#10094;</button>
+                      <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                      <button class="next" onclick="nextImage()">&#10095;</button>
+                  </div>
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+
+                  <div class="project-details">
+                    <h3>Structural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+                <div id="imageModal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+              </div>
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+
+              <div class="project-details">
+                <h3>Acritectural Details</h3>
+                <p>
+                    This project focuses on developing innovative solutions for sustainable energy.
+                    The team worked extensively on designing and implementing efficient power systems
+                    tailored for rural areas.
+                </p>
+               
+            </div>
+            <div id="imageModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <img id="fullImage" class="modal-content" src="" alt="Project Image">
+              <button class="next" onclick="nextImage()">&#10095;</button>
+          </div>
+          
+          <div class="project-images">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+              <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+          </div>
+                  
+                  
+                    
+                
+                
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          
+      
+      
+      </td>
+      </tr>
+
+      <tr onclick="toggleDetails(this)">
+        <td data-label="S.No">4</td>
+        <td data-label="Cetagory">MEP</td>
+        <td data-label="Nomper of projects">34</td>
+        <td data-label="Marks%">50%</td>
+        <td data-label="Status">Passed</td>
+      </tr>
+      <tr class="details">
+        <td colspan="5">  
+            
+          <table class="tablep">
+            <thead class="thead">
+                <tr>
+                  <th>S.No</th>
+                  <th>Project Name</th>
+                  <th>Location</th>
+                  <th>Worked as</th>
+                  <th>Tools</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr onclick="toggleDetails(this)">
+                  <td data-label="S.No">1</td>
+                  <td data-label="Project Name">Begum bari</td>
+                  <td data-label="Location">Narshingdi</td>
+                  <td data-label="Worked as">Structure engineer</td>
+                  <td data-label="Tools">Etabs,Autocad</td>
+                </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                      <div class="project-details">
+                          <h3>Project Details</h3>
+                          <p>
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                              This project focuses on developing innovative solutions for sustainable energy.
+                              The team worked extensively on designing and implementing efficient power systems
+                              tailored for rural areas.
+                          </p>
+                         
+                      </div>
+                      <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    
+                    <div class="project-images">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                        <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                        <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Structural Details</h3>
+                      <p>
+                          This project focuses on developing innovative solutions for sustainable energy.
+                          The team worked extensively on designing and implementing efficient power systems
+                          tailored for rural areas.
+                      </p>
+                     
+                  </div>
+                  <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                
+                <div class="project-images">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                    <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                    <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                </div>
+
+                <div class="project-details">
+                  <h3>Acritectural Details</h3>
+                  <p>
+                      This project focuses on developing innovative solutions for sustainable energy.
+                      The team worked extensively on designing and implementing efficient power systems
+                      tailored for rural areas.
+                  </p>
+                 
+              </div>
+              <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            
+            <div class="project-images">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+            </div>
+                    
+                    
+                      
+                  
+                  
+                  </td>
+          
+                  <tr onclick="toggleDetails(this)">
+                    <td data-label="S.No">2</td>
+                    <td data-label="Project Name">Begum bari</td>
+                    <td data-label="Location">Narshingdi</td>
+                    <td data-label="Worked as">Structure engineer</td>
+                    <td data-label="Tools">Etabs,Autocad</td>
+                  </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                    <div id="imageModal" class="modal">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <button class="prev" onclick="prevImage()">&#10094;</button>
+                      <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                      <button class="next" onclick="nextImage()">&#10095;</button>
+                  </div>
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+
+                  <div class="project-details">
+                    <h3>Structural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+                <div id="imageModal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+              </div>
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+
+              <div class="project-details">
+                <h3>Acritectural Details</h3>
+                <p>
+                    This project focuses on developing innovative solutions for sustainable energy.
+                    The team worked extensively on designing and implementing efficient power systems
+                    tailored for rural areas.
+                </p>
+               
+            </div>
+            <div id="imageModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <img id="fullImage" class="modal-content" src="" alt="Project Image">
+              <button class="next" onclick="nextImage()">&#10095;</button>
+          </div>
+          
+          <div class="project-images">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+              <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+          </div>
+                  
+                  
+                    
+                
+                
+                </td>
+                </tr>
+          
+                <tr onclick="toggleDetails(this)">
+                  <td data-label="S.No">3</td>
+                  <td data-label="Project Name">Begum bari</td>
+                  <td data-label="Location">Narshingdi</td>
+                  <td data-label="Worked as">Structure engineer</td>
+                  <td data-label="Tools">Etabs,Autocad</td>
+                </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                    <div id="imageModal" class="modal">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <button class="prev" onclick="prevImage()">&#10094;</button>
+                      <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                      <button class="next" onclick="nextImage()">&#10095;</button>
+                  </div>
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+
+                  <div class="project-details">
+                    <h3>Structural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+                <div id="imageModal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+              </div>
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+
+              <div class="project-details">
+                <h3>Acritectural Details</h3>
+                <p>
+                    This project focuses on developing innovative solutions for sustainable energy.
+                    The team worked extensively on designing and implementing efficient power systems
+                    tailored for rural areas.
+                </p>
+               
+            </div>
+            <div id="imageModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <img id="fullImage" class="modal-content" src="" alt="Project Image">
+              <button class="next" onclick="nextImage()">&#10095;</button>
+          </div>
+          
+          <div class="project-images">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+              <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+          </div>
+                  
+                  
+                    
+                
+                
+                </td>
+                </tr>
+          
+                <tr onclick="toggleDetails(this)">
+                  <td data-label="S.No">4</td>
+                  <td data-label="Project Name">Begum bari</td>
+                  <td data-label="Location">Narshingdi</td>
+                  <td data-label="Worked as">Structure engineer</td>
+                  <td data-label="Tools">Etabs,Autocad</td>
+                </tr>
+                <tr class="details">
+                  <td colspan="5">   
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                            This project focuses on developing innovative solutions for sustainable energy.
+                            The team worked extensively on designing and implementing efficient power systems
+                            tailored for rural areas.
+                        </p>
+                       
+                    </div>
+                    <div id="imageModal" class="modal">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <button class="prev" onclick="prevImage()">&#10094;</button>
+                      <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                      <button class="next" onclick="nextImage()">&#10095;</button>
+                  </div>
+                  
+                  <div class="project-images">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                      <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                      <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+                  </div>
+
+                  <div class="project-details">
+                    <h3>Structural Details</h3>
+                    <p>
+                        This project focuses on developing innovative solutions for sustainable energy.
+                        The team worked extensively on designing and implementing efficient power systems
+                        tailored for rural areas.
+                    </p>
+                   
+                </div>
+                <div id="imageModal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="fullImage" class="modal-content" src="" alt="Project Image">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+              </div>
+              
+              <div class="project-images">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+                  <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+                  <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+              </div>
+
+              <div class="project-details">
+                <h3>Acritectural Details</h3>
+                <p>
+                    This project focuses on developing innovative solutions for sustainable energy.
+                    The team worked extensively on designing and implementing efficient power systems
+                    tailored for rural areas.
+                </p>
+               
+            </div>
+            <div id="imageModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <img id="fullImage" class="modal-content" src="" alt="Project Image">
+              <button class="next" onclick="nextImage()">&#10095;</button>
+          </div>
+          
+          <div class="project-images">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 1">
+              <img class="project-image" src="image/p2.webp" alt="Project Image 2">
+              <img class="project-image" src="image/a2.webp" alt="Project Image 3">
+          </div>
+                  
+                  
+                    
+                
+                
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          
+      
+      
+      </td>
+      </tr>
+    </tbody>
+  </table>
+            </div>
+        </section>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script src="js/ofc.js"></script>
+</body>
+</html>
